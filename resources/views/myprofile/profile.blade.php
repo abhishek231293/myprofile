@@ -13,7 +13,8 @@
                 <div class="col-md-12 text-center"><img src="img/about.jpg" class="img-responsive"></div>
                 <div class="col-md-8 col-md-offset-2">
                     <div class="about-text">
-                        <p>Software engineer with more than 3 year experience in analysis, design, development, testing
+
+                        <p>Full stack developer with {{\Carbon\Carbon::createFromDate(2015, 02, 03)->diff(\Carbon\Carbon::now())->format('%y years %m months')}} experience in analysis, design, development, testing
                             and implementation of web based application. Proficient in variety of platform and language.
                             Productive in both team-based and self-managed project.</p>
                         {{--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>--}}
@@ -33,23 +34,55 @@
                 <hr>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="95"> <span class="percent">95</span> </span>
+                <div style="font-size: 24px; margin-top: 1%; margin-bottom: 1%; color: #000;">Web Designing</div>
+
+                <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="95"> <span class="percent">95</span> </span>
                     <h4>HTML5</h4>
                 </div>
-                <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
+                <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="95"> <span class="percent">95</span> </span>
                     <h4>CSS3</h4>
                 </div>
-                <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
+                <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="95"> <span class="percent">95</span> </span>
                     <h4>jQuery</h4>
                 </div>
-                <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
-                    <h4>WordPress</h4>
+                <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="95"> <span class="percent">95</span> </span>
+                    <h4>JavaScript</h4>
                 </div>
-                <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span> </span>
-                    <h4>Photoshop</h4>
+                <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="95"> <span class="percent">95</span> </span>
+                    <h4>Bootstrap</h4>
                 </div>
-                <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="65"> <span class="percent">65</span> </span>
-                    <h4>Illustrator</h4>
+                <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="95"> <span class="percent">95</span> </span>
+                    <h4>Ajax</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div style="font-size: 24px; margin-top: 1%; margin-bottom: 1%; color: #000;">Programing</div>
+                <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="95"> <span class="percent">95</span> </span>
+                    <h4>Core PHP</h4>
+                </div>
+                <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="75"> <span class="percent">75</span> </span>
+                    <h4>Laravel</h4>
+                </div>
+                <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="75"> <span class="percent">75</span> </span>
+                    <h4>AngularJs</h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div style="font-size: 24px; margin-top: 1%; margin-bottom: 1%; color: #000;">Subversion</div>
+                <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span> </span>
+                    <h4>SVN</h4>
+                </div>
+
+                <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
+                    <h4>GIT</h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div style="font-size: 24px; margin-top: 1%; margin-bottom: 1%; color: #000;">Database</div>
+                <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="90"> <span class="percent">90</span> </span>
+                    <h4>MySQL</h4>
                 </div>
             </div>
         </div>
@@ -165,8 +198,8 @@
             </div>
             <div class="row">
                 <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="200ms">
-                    <div class="achievement-box"> <span class="count">310</span>
-                        <h4>Happy Clients</h4>
+                    <div class="achievement-box"> <span class="count">8</span>
+                        <h4>Total Project</h4>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="400ms">
@@ -180,14 +213,13 @@
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="800ms">
-                    <div class="achievement-box"> <span class="count">8</span>
+                    <div class="achievement-box"> <span class="count">{{\Carbon\Carbon::createFromDate(2015, 02, 03)->diff(\Carbon\Carbon::now())->format('%y')}}</span>
                         <h4>Years of Experience</h4>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 
     <!-- Resume Section -->
     <div id="resume" class="text-center">
@@ -201,49 +233,37 @@
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <h4>Feb 2013 <br>
+                                <h4>March 2018 <br>
                                     - <br>
                                     Present </h4>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Creative Agency</h4>
-                                    <h4 class="subheading">UX Developer</h4>
+                                    <h4>Aeo Logic</h4>
+                                    <h4 class="subheading">Software Engineer</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+                                    <p>
+                                        Research & Development, Maintenance of product based application on Laravel, AngularJs, MySQL.
+                                    </p>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <h4>Nov 2011 <br>
+                                <h4>Feb 2015 <br>
                                     - <br>
-                                    Jan 2013 </h4>
+                                    March 2018 </h4>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Creative Agency</h4>
-                                    <h4 class="subheading">Front-end Developer</h4>
+                                    <h4>Successive Softwares</h4>
+                                    <h4 class="subheading">Software Engineer</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <h4>Dec 2009 <br>
-                                    - <br>
-                                    May 2011 </h4>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Creative Agency</h4>
-                                    <h4 class="subheading">UX Designer</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+                                    <p>
+                                        Research & Development, Maintenance of service based application on Core PHP, Laravel, AngularJs, MySQL.
+                                    </p>
                                 </div>
                             </div>
                         </li>
@@ -264,49 +284,55 @@
 
                         <li>
                             <div class="timeline-image">
-                                <h4>2010 <br>
+                                <h4>2011 <br>
                                     - <br>
-                                    2011 </h4>
+                                    2015 </h4>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Design University</h4>
-                                    <h4 class="subheading">Master Degree of Design</h4>
+                                    <h4>IIMT College of Engineering (AKTU)</h4>
+                                    <h4 class="subheading">Graduation Degree - B.Tech</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+                                    <p>
+                                        From A.I.C.T.E. affiliated College,Computer Science Engineering Branch with an aggregate of 70.20%.
+                                    </p>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <h4>2007 <br>
+                                <h4>2009 <br>
                                     - <br>
-                                    2010 </h4>
+                                    2011 </h4>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Design University</h4>
-                                    <h4 class="subheading">Bachelor Degree of Design</h4>
+                                    <h4>Eklavya International School</h4>
+                                    <h4 class="subheading">Intermediate </h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+                                    <p>
+                                        From CBSE Board with an aggregate of 64%.
+                                    </p>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="timeline-image">
-                                <h4>2004 <br>
-                                    - <br>
-                                    2007 </h4>
+                                <h4>
+                                    2009
+                                </h4>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>School Name</h4>
+                                    <h4>St. Joseph High School</h4>
                                     <h4 class="subheading">High School Degree</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+                                    <p class="text-muted">
+                                        From CBSE Board with an aggregate of 67%.
+                                    </p>
                                 </div>
                             </div>
                         </li>
@@ -326,14 +352,14 @@
             </div>
             <div class="col-md-8 col-md-offset-2">
                 <div class="col-md-4"> <i class="fa fa-map-marker fa-2x"></i>
-                    <p>4321 California St,<br>
-                        San Francisco, CA 12345</p>
+                    <p>D Block, Sector 27<br>
+                        Noida, UP</p>
                 </div>
                 <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
-                    <p>info@company.com</p>
+                    <p>abhishekgupta00143@gmail.com</p>
                 </div>
                 <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
-                    <p> +1 123 456 1234</p>
+                    <p> +91-901 527 2556</p>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -363,12 +389,11 @@
                 </form>
                 <div class="social">
                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                        <li><a href="#"><i class="fa fa-github"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/abhishekgupta00143"><i class="fa fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="https://twitter.com/abhi231293"><i class="fa fa-twitter"></i></a></li>
+                        <li><a target="_blank" href="https://github.com/abhishek231293"><i class="fa fa-github"></i></a></li>
+                        <li><a target="_blank"  href="https://www.instagram.com/abhishekgupta0143/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/abhishek-gupta-61234a91/"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>

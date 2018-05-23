@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('myprofile.profile');
 });
+
+Route::post('/contact_me','ContactController@add');
